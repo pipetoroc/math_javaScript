@@ -1,0 +1,89 @@
+/* Color Theme Swatches in Hex */
+:root{
+    --neutral-color-light: #EBEDF2;
+    --neutral-color-dark: #0D0D0D; 
+    --secondary-color:#AAA7F2;
+    --tertiary-color: #6F6BF2;
+    --accent-color: #5F6BF2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    height: 9.375rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+body{
+    height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: var(--neutral-color-light);
+}
+main{
+    margin: 3.125rem 1.875rem 1.875rem 1.875rem;
+    height: 100%;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+    width: 100%;
+}
+h2{
+    margin: 40px 0px;
+    font-size: 3rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5625rem;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+.main-button{
+    width: 50%;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    border-radius: .75rem;
+    border: none;
+    padding: .5rem;
+    background-color: var(--accent-color);
+    color: var(--neutral-color-light);
+}
+input{
+    width: 80%;
+    padding: .875rem;
+    border-radius: 14px;
+    text-align: center;
+}
+figure{
+    width:18.75rem;
+    height: 18.75rem;
+}
+img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.logo{
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 1.25rem;
+    background-image: url('https://drive.google.com/uc?id=1oRExPWGhIWoJj_uEIekS3OZOPBlKLXER');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

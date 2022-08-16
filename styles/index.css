@@ -1,0 +1,33 @@
+:root{
+    --neutral-color-light: #EBEDF2;
+    --neutral-color-dark: #0D0D0D; 
+    --secondary-color:#AAA7F2;
+    --tertiary-color: #6F6BF2;
+    --accent-color: #5F6BF2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: var(--neutral-color-light);
+}
+header{
+    height: 6.25rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+h1{
+    margin: 3.125rem;
+    text-align: center;
+    font-size: 3rem;
+}
+a{
+    margin: .875rem;
+    font-size: 2rem;
+}

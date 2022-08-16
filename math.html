@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link rel="stylesheet" href="./styles/styleMath.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure class="logo"></figure>
+    </header>
+    <main class="main-container">
+        <section id="cuadrado">
+        <h2>Cuadrado</h2>
+        <label for="lado">Lado 1 de tu cuadrado: <input type="number" id="lado" placeholder="digita el tamanho de lado" required></label>
+        <button id="calcularPerimetro" onclick="perimetroCuadrado(),areaCuadrado()" class="main-button">Calcular</button>
+
+        <p id="resultadoPerimetroCuadrado"></p>
+        <p id="resultadoAreaCuadrado"></p>
+        <figure>
+            <img src="https://images.pexels.com/photos/19677/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen de cuadrado">
+        </figure>
+
+        </section>
+
+        <section class="triangulo">
+            <h2>Triangulo</h2>
+        <label for="lado1">Longitud de lado 1 de triangulo: <input type="number" placeholder="digita el tamanho de lado1" id="lado1" required></label>
+        <label for="lado2">Longitud de lado 2 de triangulo: <input type="number" placeholder="digita el tamanho de lado2" id="lado2" required></label>
+        <label for="base">Longitud de la base del triangulo: <input type="number" placeholder="digita el tamanho de base" id="base" required></label>
+        <button id="calcularTriangulo" onclick="perimetroTriangulo(),areaTriangulo()" class="main-button">Calcular</button>
+        <p id="resultadoPerimetroTriangulo"></p>
+        <p id="resultadoAreaTriangulo"></p>
+        <figure>
+            <img src="https://images.pexels.com/photos/6920382/pexels-photo-6920382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen de un">
+        </figure>
+
+        </section>
+
+       <section>
+        <h2>Circulo</h2>
+       <label for="radio">Radio del circulo <input type="number" placeholder="digita el radio de tu circulo" id="radio" required></label>
+        <button class="main-button" onclick="perimetroCirculo(),areaCirculo()" id="calcularCirculo">Calcular</button>
+        <p id="resultadoPerimetroCirculo"></p>
+        <p id="resultadoAreaCirculo"></p>
+        <figure>
+            <img src="https://images.pexels.com/photos/12426536/pexels-photo-12426536.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen de circulo">
+        </figure>
+       </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./math.js"></script>
+</body>
+</html>
