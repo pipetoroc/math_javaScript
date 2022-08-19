@@ -6,7 +6,6 @@ function perimetroCuadrado (){
 
     document.getElementById('resultadoPerimetroCuadrado').innerHTML = 'El perimetro del cuadrado es: ' +perimetro
 }
-
 function areaCuadrado (){
     const lado = document.getElementById('lado')
     const valueLado = parseFloat(lado.value)
@@ -15,7 +14,6 @@ function areaCuadrado (){
 
     document.getElementById('resultadoAreaCuadrado').innerHTML = 'El area del cuadrado es: '+areaCuadrado;
 }
-
 function perimetroTriangulo (){
     const ladoTriangulo1 = document.getElementById('lado1');
     const valueLadoTriangulo1 = parseFloat(ladoTriangulo1.value);

@@ -1,0 +1,35 @@
+:root{
+  --neutral-color-light: #EBEDF2;
+  --neutral-color-dark: #0D0D0D; 
+  --secondary-color:#AAA7F2;
+  --tertiary-color: #6F6BF2;
+  --accent-color: #5F6BF2;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+header{
+  height: 9.375rem;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+.logo{
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 1.25rem;
+  background-image: url('https://drive.google.com/uc?id=1oRExPWGhIWoJj_uEIekS3OZOPBlKLXER');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: var(--neutral-color-light);
+}
