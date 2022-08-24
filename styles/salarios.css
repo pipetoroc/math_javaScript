@@ -27,8 +27,3 @@ header{
   background-repeat: no-repeat;
   background-size: contain;
 }
-body{
-  height: 100vh;
-  font-family: 'Montserrat Alternates', sans-serif;
-  background-color: var(--neutral-color-light);
-}

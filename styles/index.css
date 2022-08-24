@@ -18,6 +18,15 @@ header{
     width: 100%;
     background-color: var(--secondary-color);
 }
+.logo{
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 1.25rem;
+    background-image: url('https://drive.google.com/uc?id=1oRExPWGhIWoJj_uEIekS3OZOPBlKLXER');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 body{
     height: 100vh;
     font-family: 'Montserrat Alternates', sans-serif;

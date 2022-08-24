@@ -3,7 +3,6 @@ const inputDiscount = document.querySelector('#discount');
 const optionDiscount = document.getElementById('cupon-list')
 const pResult = document.querySelector('#result');
 
-
 const button = document.querySelector('#calcular');
 button.addEventListener('click', calcularPrecioConDescuento)
 
