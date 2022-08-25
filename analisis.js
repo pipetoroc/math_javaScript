@@ -1,6 +1,5 @@
 console.log(salarios)
 //Analisis de Juanita
-
 /*
 function encontrarPersona (nombre){//recorriendo array con metodo for, se requiere validar el objeto con el indice para entrar al atributo name.
   for (let i = 0; i < salarios.length; i++) {
@@ -56,4 +55,28 @@ function proyeccionCrecimientoSalario (nombrePersona){
   const nuevoSalario = ultimoSalario + aumento;
 
   console.log(nuevoSalario)
- }
+}
+//Estudio de empresas --> reesctructurando informacion
+const empresas = {};
+
+for ( persona of salarios) {
+  for ( trabajo of persona.trabajos) {
+    if (!empresas[trabajo.empresa]){
+      empresas[trabajo.empresa] = {};
+    }if(!empresas[trabajo.empresa][trabajo.year]){
+      empresas[trabajo.empresa][trabajo.year]=[];
+    }
+    empresas[trabajo.empresa][trabajo.year].push(trabajo.salario);
+  }
+}
+console.log({empresas})
+
+ function calcularMedianaEmpresas (nombre, year){
+  if(!empresas[nombre]){
+    console.warn('La empresa no existe');
+  }else if (!empresas[nombre][year]){
+    console.warn('La empresa no dio salarios ese year')
+  }else{
+    return formulas.calcularMediana(empresas[nombre][year])
+  }
+}
